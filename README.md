@@ -20,16 +20,16 @@ go mod tidy
 
 The project is structured as follows:
 ```lua
-basic-tasks-api/
-|-- main.go
-|-- go.mod
-|-- go.sum
-|-- api/
-|   |-- routes.go
-|-- models/
-|   |-- task.go
-|-- handlers/
-|   |-- task_handler.go
+|-- basic-tasks-api/
+|    |-- main.go
+|    |-- go.mod
+|    |-- go.sum
+|    |-- api/
+|    |   |-- routes.go
+|    |-- models/
+|    |   |-- task.go
+|    |-- handlers/
+|    |   |-- task_handler.go
 ```
 
 - main.go: The entry point of the application.

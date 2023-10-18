@@ -8,6 +8,8 @@ This is a simple REST API project implemented in Go. It provides basic functiona
 - [Endpoints](#endpoints)
 - [Usage](#usage)
 - [Dockerization](#dockerization)
+- [Postman Collection](#postman-collection)
+- [License](#license)
 
 ## Getting Started
 
@@ -31,12 +33,16 @@ The project is structured as follows:
 |    |   |-- task.go
 |    |-- handlers/
 |    |   |-- task_handler.go
+|    |-- postman/
+|    |   |-- basic-tasks-api.postman_collection.json
+|    |   |-- basic-tasks-api.postman_environment.json
 ```
 
 - main.go: The entry point of the application.
 - api/routes.go: Defines the API routes and handlers.
 - models/task.go: Defines the Task data structure.
 - handlers/task_handler.go: Contains the HTTP request handlers for tasks.
+- postman/: Contains Postman collection and environment files for testing.
 
 ## Endpoints
 
@@ -99,3 +105,11 @@ You can also run this project in a Docker container. Follow these steps:
     This maps port 8080 from the container to the host.
 
 3. Access the application in your browser at http://localhost:8080.
+
+## Postman Collection
+
+A Postman collection and environment are provided in the postman/ directory. You can import these files into Postman to test the API endpoints. Be sure to update the environment variables in Postman to match your API's actual base URL.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You can view the full license text [here](https://opensource.org/licenses/MIT).

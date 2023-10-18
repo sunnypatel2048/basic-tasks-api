@@ -7,6 +7,7 @@ This is a simple REST API project implemented in Go. It provides basic functiona
 - [Project Structure](#project-structure)
 - [Endpoints](#endpoints)
 - [Usage](#usage)
+- [Dockerization](#dockerization)
 
 ## Getting Started
 
@@ -80,3 +81,21 @@ The project is structured as follows:
         ```bash
         curl -X DELETE http://localhost:8080/tasks/1
         ```
+
+## Dockerization
+
+You can also run this project in a Docker container. Follow these steps:
+
+1. Build a Docker image from the project root directory:
+    ```bash
+    docker build -t myapi .
+    ```
+    Replace myapi with your preferred image name.
+
+2. Run the Docker container:
+    ```bash
+    docker run -p 8080:8080 myapi
+    ```
+    This maps port 8080 from the container to the host.
+
+3. Access the application in your browser at http://localhost:8080.
